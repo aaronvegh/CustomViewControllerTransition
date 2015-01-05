@@ -20,4 +20,11 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (IBAction)takePhoto:(id)sender
+{
+    UIImagePickerController * controller = [UIImagePickerController new];
+    controller.sourceType = UIImagePickerControllerSourceTypeCamera;
+    [self presentViewController:controller animated:YES completion:nil];
+}
+
 @end
